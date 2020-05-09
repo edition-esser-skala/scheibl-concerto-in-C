@@ -24,6 +24,10 @@
 						\partcombine \FirstTrombaI \FirstTrombaII
 					>>
 				>>
+				\new Staff {
+					\set Staff.instrumentName = \markup { \center-column { "Timpani" "in C–G" } }
+					\FirstTimpani
+				}
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "Violini" "unisoni" } }
@@ -42,8 +46,8 @@
 					\FirstBasso
 				}
 			>>
-			\layout { }
-			\midi { \tempo 4 = 80 }
+			\layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
+			% \midi { \tempo 4 = 80 }
 		}
 	}
 }

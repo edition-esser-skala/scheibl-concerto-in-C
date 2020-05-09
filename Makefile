@@ -5,7 +5,7 @@
 
 # change the following variables according to your project
 project = Scheibl_Concerto_in_C
-notes = tr1 tr2 vl b cemb
+notes = tr1 tr2 timp vl b cemb
 scores = full_score ottoni vl b cemb
 
 # general definitions

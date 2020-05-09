@@ -27,26 +27,26 @@
 	}
 
 	system-system-spacing =
-    #'((basic-distance . 20)
-       (minimum-distance . 20)
+    #'((basic-distance . 25)
+       (minimum-distance . 25)
        (padding . -100)
        (stretchability . 0))
 
 	top-system-spacing =
-    #'((basic-distance . 20)
-       (minimum-distance . 20)
+    #'((basic-distance . 15)
+       (minimum-distance . 15)
        (padding . -100)
        (stretchability . 0))
 
 	top-markup-spacing =
-    #'((basic-distance . 5)
-       (minimum-distance . 5)
+    #'((basic-distance . 3)
+       (minimum-distance . 3)
        (padding . -100)
        (stretchability . 0))
 
 	markup-system-spacing =
-    #'((basic-distance . 15)
-       (minimum-distance . 15)
+    #'((basic-distance . 12)
+       (minimum-distance . 12)
        (padding . -100)
        (stretchability . 0))
 
@@ -77,7 +77,7 @@
 	bookTitleMarkup = \markup {
 		\fill-line {
 			\line {
-				\fontsize #3 {
+				\fontsize #5 {
 	 				\with-color #(rgb-color .8313 0 0) { \fromproperty #'header:number }
 				}
 			}
@@ -90,6 +90,8 @@
 		\beam #2.0 #0.5 #0.48
 		\raise #1.0 \beam #2.0 #0.5 #0.48
 	}
+
+	systems-per-page = #2
 }
 
 #(define-markup-command (remark layout props text) (markup?)
@@ -449,6 +451,7 @@ tocSection = #(define-music-function (parser location number text) (markup? mark
 
 \include "notes/tr1.ly"
 \include "notes/tr2.ly"
+\include "notes/timp.ly"
 \include "notes/vl.ly"
 \include "notes/cemb.ly"
 \include "notes/b.ly"
