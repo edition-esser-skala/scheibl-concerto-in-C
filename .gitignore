@@ -1,0 +1,11 @@
+final/*
+manuscript/*
+out/*
+*.zip
+master.pdf
+front_matter/critical_report.pdf
+*.midi
+*.aux
+*.log
+*.bbl
+*.blg
