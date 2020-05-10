@@ -79,6 +79,39 @@ FirstViolino = {
 	}
 }
 
+SecondViolino = {
+	\relative c' {
+		\clef treble
+		\key c \dorian \time 12/8 \tempoSecond
+			\set Staff.timeSignatureFraction = 12/8
+		c'8.\fE d16 es8 \appoggiatura es d4 f,8 es8. g16 c8 d,4 h'8
+		c,4 as'8 \appoggiatura as g4 f8 \appoggiatura f es8. d16 c8 c4 r8
+		\appoggiatura { es'16[ f] } g4. \appoggiatura c,8 h4 c8 d8. g,16 as8 a c b
+		h8. d16 c8 es8. f16 d8 c8. g16 es8 c4 r8
+		g''1.\pE %5
+		g4 f8 es4 d8 c4 es8 es4 es8
+		es4 es8 es4 es8 d4 d8 d4 d8
+		des4 des8 des4 des8 c4 c8 c4 c8
+		c4 c8 as4 as8 d,4 d8 h'4 h8
+		h4 h8 d4 d8 g,4 g8 g4 b8 %10
+		b4 d8 f4 f8 b,4 b8 es4 es8
+		es4 f8 f4 f8 f4 f,8 es4 es8
+		es4 es8 d4 d8 es4 f8 g4 b8
+		b4 b8 b4 g8 f4 f8 f4 f8
+		es4 g8 as4 as8 d,4 h'8 c4 c8 %15
+		c4 b8 b4 as8 as4 as8 g4 g8
+		g8. es16 c8 c4 h8 c4 as'8\f g4 fis8
+		g4 g8\p g4 g8 g4 as8\fE g4 fis8
+		g4 g8\pE g4 g8 g4 f8 es8. d16 c8
+		g4.\fermata r4 r8 r1*3/4 %20
+		R1*21/8
+		g''4.\fE \appoggiatura c,8 h?4 c8 d8. g,16 as8 a8. c16 b8
+		h8. d16 c8 es d fis, \appoggiatura fis g4 d'8 es8. g16 f8
+		g4. \appoggiatura c,8 h4 c8 d8. g,16 as8 a8. c16 b8
+		h8. d16 c8 es,8. f16 d8 c4. r4 r8\fermata \bar "||" %25 finis
+	}
+}
+
 % Violino = {
 % 	\relative c' {
 % 		\clef treble

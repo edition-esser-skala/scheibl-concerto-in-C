@@ -242,6 +242,7 @@ tempoMarkup =
 %
 
 tempoFirst = \tempoMarkup "Allegro"
+tempoSecond = \tempoMarkup "Larghetto"
 
 
 

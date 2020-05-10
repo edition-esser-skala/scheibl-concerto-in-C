@@ -84,3 +84,36 @@ FirstBasso = {
 		c8 e,16 f g8 g, c4 r\fermata \bar "||"
 	}
 }
+
+SecondBasso = {
+	\relative c {
+		\clef bass
+		\key c \dorian \time 12/8 \tempoSecond
+			\set Staff.timeSignatureFraction = 12/8
+		c4\fE c8 h4 h8 c4 es8 f4 g8
+		as4 f8 h,4 h8 c4 d8 es8. f16 d8
+		c8. d16 es8 d8. g16 as8 g4 f8 es4 d8
+		f4 es8 g4 g,8 c4. c'8.-! g16-! es8-!
+		c4\p c8 h4 h8 c4 es8 g4 f8 %5
+		es4 f8 g4 g,8 c4 c8 c4 c8
+		c'4 c8 c4 c8 c4 c8 b4 b8
+		b4 b8 b4 b8 b4 b8 as4 f8
+		es4 es8 f4 f8 g4 g8 g4 g8
+		g4 g8 h,4 h8 c4 c8 es4 es8 %10
+		d4 d8 d4 d8 es4 es8 g4 g8
+		as4 as8 as4 as8 b4 b8 c4 c8
+		b4 b8 b,4 b8 es4 es8 es4 es8
+		es4 es8 es4 es8 d4 d8 d4 d8
+		c4 c8 f4 f8 g4 g8 es4 es8 %15
+		f4 d8 es4 c8 d4 d8 h4 h8
+		c4 es8 g4 g,8 c4 c'8\fE h4 a8
+		g4 g8\pE g4 g8 c,4 c'8\fE h4 a8
+		g4 g8\pE g4 g8 c,4 d8 es4 f8
+		g2. g, %20
+		R1*21/8
+		c4\f es8 d8. g16 as8 g4 f8 es4 d8
+		f4 es8 c4 c8 h4. r4 r8
+		es8. d16 c8 d8. g16 as8 g4 f8 es4 d8
+		f4 es8 g4 g,8 c4. r4 r8\fermata \bar "||" %25 finis
+	}
+}

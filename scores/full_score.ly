@@ -11,43 +11,77 @@
 #(set-global-staff-size 15.87)
 
 \book {
+	% \bookpart {
+	% 	\header {
+	% 		number = "I"
+	% 	}
+	% 	% \tocSection "1" "Allegro"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new Staff <<
+	% 					\set Staff.instrumentName = \markup { \center-column { "Tromba I, II" "in C" } }
+	% 					\partcombine \SecondTrombaI \SecondTrombaII
+	% 				>>
+	% 			>>
+	% 			\new Staff {
+	% 				\set Staff.instrumentName = \markup { \center-column { "Timpani" "in C–G" } }
+	% 				\SecondTimpani
+	% 			}
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "Violini" "unisoni" } }
+	% 					\SecondViolino
+	% 				}
+	% 			>>
+	% 			\new PianoStaff <<
+	% 				\set PianoStaff.instrumentName = "Cembalo"
+	% 				\new Staff = "RH" { \SecondCembaloR }
+	% 				\new Staff = "LH" { \SecondCembaloL }
+	% 			>>
+	% 			\new FiguredBass { \SecondBassFigures }
+	% 			\new Staff {
+	% 				\set Staff.instrumentName = "Basso"
+	% 				% \transpose c c,
+	% 				\SecondBasso
+	% 			}
+	% 		>>
+	% 		\layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
+	% 		% \midi { \tempo 4 = 80 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			number = "I"
+			number = "II"
 		}
-		% \tocSection "1" "Allegro"
+		\paper {
+			system-system-spacing.basic-distance = #20
+			system-system-spacing.minimum-distance = #20
+			systems-per-page = #3
+		}
+		% \tocSection "2" "Larghetto"
 		\score {
 			<<
 				\new StaffGroup <<
-					\new Staff <<
-						\set Staff.instrumentName = \markup { \center-column { "Tromba I, II" "in C" } }
-						\partcombine \FirstTrombaI \FirstTrombaII
-					>>
-				>>
-				\new Staff {
-					\set Staff.instrumentName = \markup { \center-column { "Timpani" "in C–G" } }
-					\FirstTimpani
-				}
-				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "Violini" "unisoni" } }
-						\FirstViolino
+						\SecondViolino
 					}
 				>>
 				\new PianoStaff <<
 					\set PianoStaff.instrumentName = "Cembalo"
-					\new Staff = "RH" { \FirstCembaloR }
-					\new Staff = "LH" { \FirstCembaloL }
+					\new Staff = "RH" { \SecondCembaloR }
+					\new Staff = "LH" { \SecondCembaloL }
 				>>
-				\new FiguredBass { \FirstBassFigures }
+				\new FiguredBass { \SecondBassFigures }
 				\new Staff {
 					\set Staff.instrumentName = "Basso"
-					% \transpose c c,
-					\FirstBasso
+					% \transpdose c c,
+					\SecondBasso
 				}
 			>>
-			\layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
-			% \midi { \tempo 4 = 80 }
+			\layout { }
+			% \midi { \tempo 4. = 50 }
 		}
 	}
 }

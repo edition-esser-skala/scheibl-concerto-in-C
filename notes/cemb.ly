@@ -180,7 +180,81 @@ FirstBassFigures = \figuremode {
 	<5> <6 4>8 <5 3> r2 %73 finis
 }
 
-% Organo = {
+SecondCembaloR = {
+	\relative c' {
+		\clef treble
+		\key c \dorian \time 12/8 \tempoSecond
+			\set Staff.timeSignatureFraction = 12/8
+		s1.*4
+		c'8. d16 es8 \appoggiatura es d4 f,8 es8. g16 c8 d,4 h'8 %5
+		c,4 as'8 \appoggiatura as g4 f8 es8.\trill d16 c8 c4\trill r8
+		as''4.\trill c4 as8 \appoggiatura g fis4.\trill \appoggiatura fis8 g4 r8
+		g4.\trill b4 g8 \appoggiatura f e4.\trill \appoggiatura e8 f4 \appoggiatura { f16[ g] } as8
+		\appoggiatura as g8.\trill f16 es8 \appoggiatura es d4 c8 h4. r4 r8
+		d4.\trill g4 f8 \appoggiatura f es4. r8 r g %10
+		\appoggiatura g f4. b,4\trill as8 g4. r8 r b
+		\appoggiatura b c4. c'8. as16 f8 \appoggiatura es d4. es4 es,8
+		\appoggiatura f8 g4. g8. as16 f8 \appoggiatura f es4. r8 r es
+		g4 g8 g8.\trill f16 es8 \appoggiatura a b4.\trill h\trill
+		c8. d16 es8 d8. es16 c8 \appoggiatura c h4. r8 r g' %15
+		as,4 f'8 g,4 es'8 \appoggiatura g, f4. r8 r d'
+		es,8. g16 c8 es,8. f16 d8 \appoggiatura d c4. r4 r8
+		r r << { f' es4 d8 es4. } \\ { d8 c4 h8 c4. } >> r4 r8
+		r r << { f es4 d8 es4 } \\ { d8 c4 h8 c4 } >> d8 c4.
+		c2. \appoggiatura c8 d2.\trill
+		\time 21/8 d16[ h a\trill g] f'[ d c\trill h] as'[ f es\trill d] h'4.\trill r32 c[ g as] f[ g es f] d[ es c d] h[ g a h] c[ h d c] es[ d f es] g([-. fis-. f-. e-.]) es([-. d-. des-. c-.]) g4 d'\trill
+		\time 12/8 \bar "|" c4. s s2.
+		s1.*3 \bar "||"
+	}
+}
+
+SecondCembaloL = {
+	\relative c {
+		\clef bass
+		\key c \dorian \time 12/8 \tempoSecond
+			\set Staff.timeSignatureFraction = 12/8
+		c4 c8 h4 h8 c4 es8 f4 g8
+		as4 f8 h,4 h8 c4 d8 es8. f16 d8
+		c8. d16 es8 d8. g16 as8 g4 f8 es4 d8
+		f4 es8 g4 g,8 c4. c'8.-! g16-! es8-!
+		c4 c8 h4 h8 c4 es8 g4 f8 %5
+		es4 f8 g4 g,8 c4 c8 c4 c8
+		c'4 c8 c4 c8 c4 c8 b4 b8
+		b4 b8 b4 b8 b4 b8 as4 f8
+		es4 es8 f4 f8 g4 g8 g4 g8
+		g4 g8 h,4 h8 c4 c8 es4 es8 %10
+		d4 d8 d4 d8 es4 es8 g4 g8
+		as4 as8 as4 as8 b4 b8 c4 c8
+		b4 b8 b,4 b8 es4 es8 es4 es8
+		es4 es8 es4 es8 d4 d8 d4 d8
+		c4 c8 f4 f8 g4 g8 es4 es8 %15
+		f4 d8 es4 c8 d4 d8 h4 h8
+		c4 es8 g4 g,8 c4. r4 r8
+		r r g' g4 g8 c,4. r4 r8
+		r r g' g4 g8 c,4 d8 es4 f8
+		g2. <g g,>~ %20
+		q1*21/8
+		c,4 es8 d8. g16 as8 g4 f8 es4 d8
+		f4 es8 c4 c8 h4. r4 r8
+		es8. d16 c8 d8. g16 as8 g4 f8 es4 d8
+		f4 es8 g4 g,8 c4. r4 r8\fermata \bar "||" %25 finis
+	}
+}
+
+SecondBassFigures = \figuremode {
+	r4. <6 5> <5>4 <6>8 <6 5 _->4 <7 _!>8
+	<5>4 <5 _->8 <7->4 <6>8 <[5]>4 <6!>8 <6>4 <6!>8
+	<5>4. <6>8. <\t>16 <6>8 <_!>4 <6 4! _->8 <6 4! 2>4 <6->8
+	<6 4! 2>4 <6>8 <[6] 4>4 <[5] _!>8 <5>4. r
+	r1.*16 %20
+	r1*21/8
+	r4 <6>8 <6!>4 <6>8 <_!>4 <6 4! _->8 <6 4! 2>4 <6->8
+	<6 4 ! 2>4 <6>8 <5>4 <6 4+ 2>8 <6>4. r
+	<6> <6!>4 <6>8 <_!>4 <_->8 <6 4! 2>4 <6->8
+	<6 4! 2>4 <6>8 <[6] 4>4 <7 _!>8 <_!>2. %25 finis
+}
+
+% Cembalo = {
 % 	\relative c {
 % 		\clef bass
 %
