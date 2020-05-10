@@ -1,0 +1,3 @@
+\contentsline {section}{\numberline {1}Allegro}{1}
+\contentsline {section}{\numberline {2}Larghetto}{15}
+\contentsline {section}{\numberline {3}Allegro}{19}
