@@ -254,13 +254,346 @@ SecondBassFigures = \figuremode {
 	<6 4! 2>4 <6>8 <[6] 4>4 <7 _!>8 <_!>2. %25 finis
 }
 
-% Cembalo = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassFigures = \figuremode {
-%
-% }
+ThirdCembaloR = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/8 \tempoThird
+		s4.*16 %16
+		c'16 g e g c,32[ e g c]
+		e,[ g c e] d8\trill c
+		d16 h g h d,32[ g h d]
+		f,[ h d f] e8\trill d %20
+		e16 c g c e,32[ g c e]
+		g,[ c e g] f8\trill e
+		d32[ e f g] a16 c, h c
+		\appoggiatura c16 h8 g r
+		\tuplet 3/2 8 { c16 g' f e[ d c] b a b } %25
+		\tuplet 3/2 8 { g g' f e[ d c] b a b }
+		\tuplet 3/2 8 { g g' f e[ d c] b a b }
+		\tuplet 3/2 8 { a c f g,[ b e] } f,8
+		\tuplet 3/2 8 { a16 a' g fis[ e d] c\trill h c }
+		\tuplet 3/2 8 { a a' g fis[ e d] c\trill h c } %30
+		\tuplet 3/2 8 { a a' g fis[ e d] c\trill h c }
+		\tuplet 3/2 8 { h d g a,[ c fis] } g,8
+		e'4.\trill
+		d\trill
+		c\trill %35
+		h\trill
+		a\trill
+		g\trill
+		fis8 <fis a d> q
+		q4 r8 %40
+		\tuplet 3/2 8 { d'16 fis g h[ a g] e fis g }
+		\tuplet 3/2 8 { d fis g h[ a g] e fis g }
+		\tuplet 3/2 8 { d a' g c,[ g' fis] h, fis' e }
+		\tuplet 3/2 8 { a, e' d g,[ d' cis] } fis,8
+		\tuplet 3/2 8 { g16 h c e[ d c] h c d } %45
+		\tuplet 3/2 8 { g, h c e[ d c] h c d }
+		c8 \appoggiatura h a4\trill
+		g4 r8
+		r g'16 fis32 e d[ c h a]
+		g8 r r %50
+		r g16 fis32 e d[ c h a]
+		g8 r r
+		r g'16 a32 h c[ d e fis]
+		g8 <h, g d> <a fis c>
+		<g d h>4 r8 %55
+		s4.*11 %66
+		g'16 d h d g,32[ h d g]
+		h,[ d g h] a8\trill g
+		a16 fis d fis a,32[ d fis a]
+		c,[ fis a c] h8\trill a %70
+		h32[ a g fis] g16 d h g
+		\appoggiatura g8 fis4.
+		g32[ h d f!] e8\trill d
+		\appoggiatura d16 e8 c r
+		c16 g e g c,32[ e g c] %75
+		e,[ g c e] d8\trill c
+		d16 h g h d,32[ g h d]
+		g,[ h d f] e8\trill d
+		\tuplet 3/2 8 { e16 g c, e[ g c,] e g c, }
+		\tuplet 3/2 8 { f a c, f[ a c,] f a c, } %80
+		\tuplet 3/2 8 { fis a d, fis[ a d,] fis a d, }
+		\tuplet 3/2 8 { g h d, g[ h d,] g h d, }
+		\tuplet 3/2 8 { gis h e, gis[ h e,] gis h e, }
+		\tuplet 3/2 8 { a c e, a[ c e,] a c e, }
+		f d b' a gis a %85
+		\appoggiatura a gis8 e r
+		<< {
+			\tieDashed c'4.~
+			c16 h c a h c
+			h4.~
+			h16 a h g a h %90
+			a4.~
+			a16 gis a fis gis a
+			gis4.
+			a
+			f4 e8 %95
+			d4 c8
+			h4 a8
+		} \\ {
+			a'16 gis a e f g
+			f4.~
+			f16 e f d e f
+			\once \tieDashed e4.~ %90
+			e16 d e c d e
+			\once \tieDashed d4.~
+			d16 c d h c d
+			c h c a h c
+			d c d h c a %95
+			h a h gis a fis
+			gis fis gis e fis dis
+		} >>
+		gis4 a8
+		a a gis
+		<a e c>4 r8 %100
+		s4.*7 %107
+		c16 g e g c,32[ e g c]
+		e,[ g c e] d8\trill c
+		d16 h g h d,32[ g h d] %110
+		g,[ h d f] e8\trillE d
+		e16 f g e f d
+		e cis d h cis a
+		d e f d e c
+		d h c a h g %115
+		c d e c d h
+		c f, a c f32[ e d c]
+		d16 g, h d g32[ f e d]
+		e8\trill d r
+		g16 c, c4\trill %120
+		a'16 c, c4\trill
+		f16 h, h4\trill
+		g'16 h, h4\trill
+		e16 a, a4\trill
+		f'16 a, a4\trill %125
+		d16 g, g4\trill
+		e'32[ d c h] c16 g c e
+		g32[ f e d] e16 c e g
+		c8 c, f
+		\tuplet 3/2 8 { e16 d c } \appoggiatura c8 d4\trill %130
+		<c g e>4 r8
+		r8 c'16 h32 a g[ f e d]
+		c8 r r
+		r c16 h32 a g[ f e d]
+		c8 r r %135
+		r c'16 d32 e f[ g a h]
+		c8 <e, c g> <d h f>
+		<c g e>4 r8
+		s4.*15 \bar "|." %153 FINIS
+	}
+}
+
+ThirdCembaloL = {
+	\relative c {
+		\clef bass
+		\key c \major \time 3/8 \tempoThird
+		c4 r8
+		c e c
+		h4 r8
+		d g g,
+		c4 r8 %5
+		e c' c,
+		f4 r8
+		g16 e d c h a
+		g8 a h
+		c d e %10
+		f4 e8
+		f16 g f8 e
+		d a h
+		c e a
+		f g g, %15
+		c e d
+		<c e g c>4 r8
+		c' h a
+		<g h>4 r8
+		d' c h %20
+		c4 r8
+		e d c
+		f f, fis
+		g4 r8
+		e c' g %25
+		e c' g
+		e c' g
+		f r r
+		fis d' a
+		fis d' a %30
+		fis d' a
+		g r r
+		c,16 e g c h c
+		h, d f h a h
+		a, c fis a g a %35
+		g, h d g fis g
+		fis a d fis e fis
+		e, g cis e d e
+		d,8 <d fis a d> q
+		q4 r8 %40
+		\clef treble h''8 g c
+		h g c
+		h a g
+		fis e d
+		e c g' %45
+		e c g'
+		<c, a'> <d fis>4
+		<g, g'> r8
+		\clef bass g,4 r8
+		g4 r8 %50
+		g4 r8
+		g4 r8
+		g4 r8
+		r g' d
+		<g g,>4 r8 %55
+		g h g
+		d4 r8
+		a' fis d
+		g4 r8
+		h g fis %60
+		e d c
+		d e fis
+		g h d
+		g, h d
+		g, g g %65
+		g-! d-! h-!
+		<g h d g>4 r8
+		g' fis e
+		<d fis a>4 r8
+		a' g fis %70
+		g4 r8
+		r d'16 c h a
+		<g h>8 c <g h>
+		<c, e g c>4 r8
+		q4 r8 %75
+		c' h a
+		<g h>4 r8
+		d' c h
+		c \clef treble c[ b']
+		r a, a' %80
+		r d, d'
+		r h, h'
+		r e, e'
+		r c, c'
+		r d, f %85
+		e4 r8
+		\clef bass a,, c a
+		d f d
+		g, h g
+		c e c %90
+		f, a f
+		h d h
+		<e e,>4 r8
+		q4 r8
+		q4 r8 %95
+		q4 r8
+		q4 r8
+		e4 f8
+		d e e,
+		a4 r8 %100
+		a' h cis
+		d4 r8
+		g, a h
+		c!4 r8
+		c, d e %105
+		f4 r8
+		g16 a-! g-! f-! e-! d-!
+		<c e g c>4 r8
+		c' h a
+		<g h>4 r8 %110
+		d' c h
+		c e d
+		cis h a
+		f' d c
+		h a g %115
+		e' c h
+		a a, a'
+		h h, h'
+		<c c,> <g h> r
+		e16 c' h c e, c' %120
+		f, c' h c f, c'
+		d, h' a h d, h'
+		e, h' a h e, h'
+		c, a' g a c, a'
+		d, a' g a d, a' %125
+		h, g' f g h, g'
+		c,8 r r
+		c r r
+		r <a' c> <f c'>
+		<< { c'4 h8 } \\ { g f g } >> %130
+		<c c,>4 r8
+		c,4 r8
+		R4.
+		c4 r8
+		R4. %135
+		c4 r8
+		r c' g
+		<c, e g>4 r8
+		c e c
+		h4 r8 %140
+		d g g,
+		c4 r8
+		e c' c,
+		f4 r8
+		g16 e-! d-! c-! h-! a-! %145
+		g8 a h
+		c d e
+		f4 e8
+		f16 g f8 e
+		d a h %150
+		c e a
+		f g g,
+		c4 r8\fermata \bar "|." %153 FINIS
+	}
+}
+
+ThirdBassFigures = \figuremode {
+	r4.
+	<5>
+	<6>
+	<5>8 <7>4
+	<5>4. %5
+	<6>
+	<5>
+	q
+	<5>8 <6> <\t>
+	<5>4. %10
+	<6>4 <6\\>8
+	<6>4 <\t>8
+	<5> <6> <\t>
+	<5>4.
+	<6 5>8 <4> <3> %15
+	<5>4.
+	r4.*39 %55
+	<5>4.
+	<_+>
+	<5>8 <6 5> <7 [_+]>
+	<5>4.
+	<6> %60
+	q
+	<7 _+>
+	<5>8 <\t> <_+>
+	<5> <\t> <_+>
+	<5>4. %65
+	r4.
+	r4.*34 %100
+	<_+>8 <6> q
+	<_!>4.
+	<5>8 <6> <6 5>
+	<5>4.
+	q %105
+	q
+	q
+	r4.*31 %138
+	<5>4.
+	<6> %140
+	<5>8 <7>4
+	r4.
+	<6>
+	<5>
+	q %145
+	<5>8 <6> <6 5>
+	<5>4.
+	<6>4 <6\\>8
+	<6>4.
+	<5>8 <6> <6 5> %150
+	<5>4.
+	<6 5>8 <4> <3>
+	r4. %153 FINIS
+}

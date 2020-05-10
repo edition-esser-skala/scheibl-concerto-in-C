@@ -117,3 +117,151 @@ SecondBasso = {
 		f4 es8 g4 g,8 c4. r4 r8\fermata \bar "||" %25 finis
 	}
 }
+
+ThirdBasso = {
+	\relative c {
+		\clef bass
+		\key c \major \time 3/8 \tempoThird
+		c4\fE r8
+		c e c
+		h4 r8
+		d g g,
+		c4 r8 %5
+		e c' c,
+		f4 r8
+		g16 e d c h a
+		g8 a h
+		c d e %10
+		f4 e8
+		f16 g f8 e
+		d a h
+		c e a
+		f g g, %15
+		c e d
+		c r r
+		c\p r r
+		g' r r
+		g r r %20
+		c, r r
+		c r r
+		f4 fis8
+		g16 a\f g f e d
+		c8 e\p e %25
+		e e e
+		e e e
+		f4 r8
+		fis fis fis
+		fis fis fis %30
+		fis fis fis
+		g r r
+		c,4 r8
+		h4 r8
+		a4 r8 %35
+		g4 r8
+		fis'4 r8
+		e4 r8
+		d d\f d
+		d16 e d c h a %40
+		g4 r8
+		R4.*6 %47
+		g4\pE r8
+		R4.
+		g4 r8 %50
+		R4.
+		g4 r8
+		R4.
+		r8 g' d
+		g,4\f r8 %55
+		g' h g
+		d4 r8
+		a' fis d
+		g4 r8
+		h g fis %60
+		e d c
+		d e fis
+		g h d
+		g, h d
+		g, g g %65
+		g d h
+		g4 r8
+		R4.
+		d'4\pE r8
+		R4. %70
+		g4 r8
+		R4.
+		g8 g, g'
+		c,4 r8
+		R4.*4 %78
+		c4 r8
+		f4 r8 %80
+		d4 r8
+		g4 r8
+		e4 r8
+		a4 r8
+		d,4 r8 %85
+		e16 f\f e d c h
+		a4 r8
+		d4\pE r8
+		g,4 r8
+		c4 r8 %90
+		f,4 r8
+		h4 r8
+		e4.~
+		e~
+		e~ %95
+		e~
+		e
+		e4 f8
+		d e e,
+		a4 r8 %100
+		a'\f h cis
+		d4 r8
+		g, a h
+		c!4 r8
+		c, d e %105
+		f4 r8
+		g16 a g f e d
+		c4 r8
+		R4.
+		g4\pE r8 %110
+		R4.
+		c8 r r
+		a' r r
+		d, r r
+		g r r %115
+		c, r r
+		a r r
+		h r r
+		c g' f
+		e e e %120
+		f f e
+		d d d
+		e e d
+		c c c
+		d d c %125
+		h h h
+		c4 r8
+		R4.
+		r8 a' f
+		g f g %130
+		c,4 r8
+		R4.*5 %136
+		r8 c g'
+		c,4 r8
+		c\fE e c
+		h4 r8 %140
+		d g g,
+		c4 r8
+		e c' c,
+		f4 r8
+		g16 e d c h a %145
+		g8 a h
+		c d e
+		f4 e8
+		f16 g f8 e
+		d a h %150
+		c e a
+		f g g,
+		c4 r8\fermata \bar "|." %153 FINIS
+	}
+}

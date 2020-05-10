@@ -21,13 +21,47 @@
 	% 			\new StaffGroup <<
 	% 				\new Staff <<
 	% 					\set Staff.instrumentName = \markup { \center-column { "Tromba I, II" "in C" } }
-	% 					\partcombine \SecondTrombaI \SecondTrombaII
+	% 					\partcombine \FirstTrombaI \FirstTrombaII
 	% 				>>
 	% 			>>
 	% 			\new Staff {
 	% 				\set Staff.instrumentName = \markup { \center-column { "Timpani" "in C–G" } }
-	% 				\SecondTimpani
+	% 				\FirstTimpani
 	% 			}
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "Violini" "unisoni" } }
+	% 					\FirstViolino
+	% 				}
+	% 			>>
+	% 			\new PianoStaff <<
+	% 				\set PianoStaff.instrumentName = "Cembalo"
+	% 				\new Staff = "RH" { \FirstCembaloR }
+	% 				\new Staff = "LH" { \FirstCembaloL }
+	% 			>>
+	% 			\new FiguredBass { \FirstBassFigures }
+	% 			\new Staff {
+	% 				\set Staff.instrumentName = "Basso"
+	% 				% \transpose c c,
+	% 				\FirstBasso
+	% 			}
+	% 		>>
+	% 		\layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
+	% 		% \midi { \tempo 4 = 80 }
+	% 	}
+	% }
+	% \bookpart {
+	% 	\header {
+	% 		number = "II"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #20
+	% 		system-system-spacing.minimum-distance = #20
+	% 		systems-per-page = #3
+	% 	}
+	% 	% \tocSection "2" "Larghetto"
+	% 	\score {
+	% 		<<
 	% 			\new StaffGroup <<
 	% 				\new Staff {
 	% 					\set Staff.instrumentName = \markup { \center-column { "Violini" "unisoni" } }
@@ -42,46 +76,51 @@
 	% 			\new FiguredBass { \SecondBassFigures }
 	% 			\new Staff {
 	% 				\set Staff.instrumentName = "Basso"
-	% 				% \transpose c c,
+	% 				% \transpdose c c,
 	% 				\SecondBasso
 	% 			}
 	% 		>>
-	% 		\layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
-	% 		% \midi { \tempo 4 = 80 }
+	% 		\layout { }
+	% 		% \midi { \tempo 4. = 50 }
 	% 	}
 	% }
 	\bookpart {
 		\header {
-			number = "II"
+			number = "III"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #20
-			system-system-spacing.minimum-distance = #20
-			systems-per-page = #3
-		}
-		% \tocSection "2" "Larghetto"
+		% \tocSection "3" "Allegro"
 		\score {
 			<<
 				\new StaffGroup <<
+					\new Staff <<
+						\set Staff.instrumentName = \markup { \center-column { "Tromba I, II" "in C" } }
+						\partcombine \ThirdTrombaI \ThirdTrombaII
+					>>
+				>>
+				\new Staff {
+					\set Staff.instrumentName = \markup { \center-column { "Timpani" "in C–G" } }
+					\ThirdTimpani
+				}
+				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "Violini" "unisoni" } }
-						\SecondViolino
+						\ThirdViolino
 					}
 				>>
 				\new PianoStaff <<
 					\set PianoStaff.instrumentName = "Cembalo"
-					\new Staff = "RH" { \SecondCembaloR }
-					\new Staff = "LH" { \SecondCembaloL }
+					\new Staff = "RH" { \ThirdCembaloR }
+					\new Staff = "LH" { \ThirdCembaloL }
 				>>
-				\new FiguredBass { \SecondBassFigures }
+				\new FiguredBass { \ThirdBassFigures }
 				\new Staff {
 					\set Staff.instrumentName = "Basso"
-					% \transpdose c c,
-					\SecondBasso
+					% \transpose c c,
+					\ThirdBasso
 				}
 			>>
 			\layout { }
-			% \midi { \tempo 4. = 50 }
+			\midi { \tempo 4. = 60 }
 		}
 	}
 }

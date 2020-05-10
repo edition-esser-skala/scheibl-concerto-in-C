@@ -11,3 +11,11 @@ FirstTimpani = {
 		s1*73 \bar "||" %73 finis
 	}
 }
+
+ThirdTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 3/8 \tempoThird
+		s4.*153 \bar "|." %153 FINIS
+	}
+}

@@ -112,9 +112,129 @@ SecondViolino = {
 	}
 }
 
-% Violino = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
+ThirdViolino = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/8 \tempoThird
+		c'8\fE g16 e c8
+		e'8 \appoggiatura d c8.([\trill h32 c)]
+		d8 h16 g g,8
+		f'' \appoggiatura e d8.([\trill c32 d)]
+		e8 c16 g c,8 %5
+		g'' \appoggiatura f e8.([\trill d32 e)]
+		a16 g f e d c
+		h e, d c h a
+		g f'' f f f f
+		e c c c c c %10
+		a cis d( cis d cis)
+		d d, d d d d
+		d f' f f f f
+		e c c c c c
+		a[ h] h8.\trill c16 %15
+		c8 c, r
+		R4.*8 %24
+		g''4.~\p %25
+		g~
+		g
+		c,8 r r
+		r a' a
+		a4.~ %30
+		a
+		d,8 r r
+		r r a'
+		a g g
+		g fis fis %35
+		fis e e
+		e d d
+		d cis cis
+		d d16\f cis d cis
+		d8 d,16 c h a %40
+		g4 r8
+		g4\pE r8
+		g4 r8
+		d' r r
+		R4.*3 %47
+		r8 g'16 d h d
+		g,8 r r
+		r g16 d h d %50
+		g,8 r r
+		r g'16 h d h
+		g'8 r r
+		R4.
+		g8\f d16 h g8 %55
+		h' \appoggiatura a g8.([\trill fis32 g)]
+		a8 fis16 d d,8
+		c'' \appoggiatura h a8.([\trill g32 a)]
+		h8 g16 d g,8
+		d'' \appoggiatura c h8.([\trill a32 h)] %60
+		c16 d c h a g
+		fis g fis e d c
+		h d g h, a fis'
+		h, d g h, a fis'
+		g8 d h %65
+		g4 r8
+		R4.*7 %73
+		r8 e\pE g
+		c,4 r8 %75
+		R4.
+		g4 r8
+		R4.
+		r8 g'' g
+		r a a %80
+		r a a
+		r h h
+		r h h
+		r c, c,
+		d4 r8 %85
+		e16 f\f e d c h
+		a4 r8
+		R4.*12 %99
+		a''8\fE e16 c a8 %100
+		a' g8.([\trill f32 g)]
+		f16 d a f d8
+		g' \appoggiatura g f8.([\trill e32 f)]
+		e16 c g e c8
+		g''16 e c g e g' %105
+		a g f e d c
+		h a g f e d
+		c4 r8
+		R4.
+		g4\pE r8 %110
+		R4.
+		c4 r8
+		R4.*6 %118
+		r8 g''16 d h d
+		g,8 g' g %120
+		r a g
+		r f f
+		r g f
+		r e e
+		r f e %125
+		r d d
+		g, r r
+		R4.*3 %130
+		r8 c'16 g e g
+		c,8 r r
+		r c16 g e g
+		c,8 r r
+		r c'16 e g e %135
+		c'8 r r
+		R4.
+		c,8\fE g16 e c8
+		e'8 \appoggiatura d c8.([\trill h32 c)]
+		d8 h16 g g,8 %140
+		f'' \appoggiatura e d8.([\trill c32 d)]
+		e8 c16 g c,8
+		g'' \appoggiatura f e8.([\trill d32 e)]
+		a16 g f e d c
+		h e, d c h a %145
+		g f'' f f f f
+		e c c c c c
+		a cis d( cis d cis)
+		d d, d d d d
+		d f' f f f f %150
+		e c c c c c
+		a[ h] h8.\trill c16
+		c8 c, r\fermata \bar "|." %153 FINIS
+	}
+}

@@ -35,3 +35,66 @@ FirstTrombaI = {
 		g g16 a g8 g g4 r\fermata \bar "||" %73 finis
 	}
 }
+
+ThirdTrombaI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/8 \tempoThird
+		c'4\fE r8
+		R4.
+		d4 r8
+		R4.
+		e4 r8 %5
+		R4.*3
+		f4 r8
+		e4 r8 %10
+		R4.*2
+		f8 r r
+		e r r
+		f d8.\trill c16 %15
+		c4 r8
+		R4.*31 %47
+		g'4\pE r8
+		R4.
+		g4 r8 %50
+		R4.
+		g4 r8
+		R4.*2
+		g4\fE r8 %55
+		R4.*7 %62
+		g4 r8
+		g4 r8
+		g g g %65
+		g4 r8
+		R4.*37 %103
+		e16\fE f g8 g
+		g4 r8 %105
+		R4.
+		g4 r8
+		g4 r8
+		R4.
+		g4\pE r8 %110
+		R4.
+		g4 r8
+		R4.*18 %130
+		g4\pE r8
+		R4.
+		g4 r8
+		R4.
+		g4 r8 %135
+		R4.*2
+		c,4\fE r8
+		R4.
+		d4 r8 %140
+		R4.
+		e4 r8
+		R4.*3 %145
+		f4 r8
+		e4 r8
+		R4.*2
+		f8 r r %150
+		e r r
+		f d8.\trill c16
+		c4 r8\fermata \bar "|." %153 FINIS
+	}
+}
