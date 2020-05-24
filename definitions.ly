@@ -332,7 +332,7 @@ tempoThird = \tempoMarkup "Allegro"
 		\Score
 		\override MetronomeMark.font-series = #'medium
 		\compressFullBarRests
-		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
+		% \override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
 	}
 	\context {
 		\StaffGroup
@@ -455,5 +455,5 @@ tocSection = #(define-music-function (parser location number text) (markup? mark
 \include "notes/tr2.ly"
 \include "notes/timp.ly"
 \include "notes/vl.ly"
-\include "notes/cemb.ly"
+\include "notes/org.ly"
 \include "notes/b.ly"

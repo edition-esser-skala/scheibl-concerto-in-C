@@ -110,8 +110,8 @@ SecondBasso = {
 		g4 g8\pE g4 g8 c,4 c'8\fE h4 a8
 		g4 g8\pE g4 g8 c,4 d8 es4 f8
 		g2. g, %20
-		R1*21/8
-		c4\f es8 d8. g16 as8 g4 f8 es4 d8
+		\time 21/8 R1*21/8
+		\time 12/8 c4\f es8 d8. g16 as8 g4 f8 es4 d8
 		f4 es8 c4 c8 h4. r4 r8
 		es8. d16 c8 d8. g16 as8 g4 f8 es4 d8
 		f4 es8 g4 g,8 c4. r4 r8\fermata \bar "||" %25 finis

@@ -104,8 +104,8 @@ SecondViolino = {
 		g4 g8\p g4 g8 g4 as8\fE g4 fis8
 		g4 g8\pE g4 g8 g4 f8 es8. d16 c8
 		g4.\fermata r4 r8 r1*3/4 %20
-		R1*21/8
-		g''4.\fE \appoggiatura c,8 h?4 c8 d8. g,16 as8 a8. c16 b8
+		\time 21/8 R1*21/8
+		\time 12/8 g''4.\fE \appoggiatura c,8 h?4 c8 d8. g,16 as8 a8. c16 b8
 		h8. d16 c8 es d fis, \appoggiatura fis g4 d'8 es8. g16 f8
 		g4. \appoggiatura c,8 h4 c8 d8. g,16 as8 a8. c16 b8
 		h8. d16 c8 es,8. f16 d8 c4. r4 r8\fermata \bar "||" %25 finis
