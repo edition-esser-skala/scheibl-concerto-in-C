@@ -35,13 +35,13 @@
 					}
 				>>
 				\new PianoStaff <<
-					\set PianoStaff.instrumentName = "Cembalo"
+					\set PianoStaff.instrumentName = "Organo"
 					\new Staff = "RH" { \FirstCembaloR }
 					\new Staff = "LH" { \FirstCembaloL }
 				>>
 				\new FiguredBass { \FirstBassFigures }
 				\new Staff {
-					\set Staff.instrumentName = "Basso"
+					\set Staff.instrumentName = "Bassi"
 					% \transpose c c,
 					\FirstBasso
 				}
@@ -69,13 +69,13 @@
 					}
 				>>
 				\new PianoStaff <<
-					\set PianoStaff.instrumentName = "Cembalo"
+					\set PianoStaff.instrumentName = "Organo"
 					\new Staff = "RH" { \SecondCembaloR }
 					\new Staff = "LH" { \SecondCembaloL }
 				>>
 				\new FiguredBass { \SecondBassFigures }
 				\new Staff {
-					\set Staff.instrumentName = "Basso"
+					\set Staff.instrumentName = "Bassi"
 					% \transpdose c c,
 					\SecondBasso
 				}
@@ -108,13 +108,13 @@
 					}
 				>>
 				\new PianoStaff <<
-					\set PianoStaff.instrumentName = "Cembalo"
+					\set PianoStaff.instrumentName = "Organo"
 					\new Staff = "RH" { \ThirdCembaloR }
 					\new Staff = "LH" { \ThirdCembaloL }
 				>>
 				\new FiguredBass { \ThirdBassFigures }
 				\new Staff {
-					\set Staff.instrumentName = "Basso"
+					\set Staff.instrumentName = "Bassi"
 					% \transpose c c,
 					\ThirdBasso
 				}
