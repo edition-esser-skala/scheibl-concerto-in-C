@@ -34,7 +34,7 @@ FirstViolino = {
 		g h''4 c16 d g,8 g4 a16 h
 		e,8 c'4 h8 h a r d, %30
 		cis16 e a( g) a( g) a( g) fis a, d( c) d( c) d( c)
-		h8 g' a,,-\critnote fis'' g d32( c h a) g8 d32( c h a)
+		h8 g' d, fis' g d32( c h a) g8 d32( c h a)
 		\kneeBeam g8 g''32( a h c) d16 h c a h g c a a8.\trill g16
 		g4 r r2
 		r r8 g,16 a g f! e d %35
