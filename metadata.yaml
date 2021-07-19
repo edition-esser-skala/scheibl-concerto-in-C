@@ -1,0 +1,16 @@
+composer: Scheibl, Johann Adam
+title: Concerto in C
+id: (SI-Pk Mus. Ms. 15)
+genre: concerto
+scoring: 2 clno (C), timp (C–G), 2 vl, org/cemb solo, b
+sources:
+  1:
+    siglum: SI-Pk
+    shelfmark: Mus. Ms. 15
+    type: manuscript copy
+    date: 1740–1760
+    rism: 1001022937
+    url:
+github: scheibl-concerto-in-C
+imslp:
+notes:
