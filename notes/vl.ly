@@ -71,7 +71,7 @@ FirstViolino = {
     <d, a' f'>16 d'( c! h) c( h) c( h) f' d( c h) c( h) c( h) %70
     c8 g32( f e d) c8 g''32( f e d) c8 g e g
     c, c'32( d e f) g16 a g f e8 c32( d e f) g16 a g f
-    e8 c d, h' c,4 r\fermata \bar "||" %73 finis
+    e8 c d, h' c,4 r\fermata \bar "|." %73 finis
   }
 }
 
@@ -104,7 +104,7 @@ SecondViolino = {
     \time 12/8 g''4.\fE \appoggiatura c,8 h?4 c8 d8. g,16 as8 a8. c16 b8
     h8. d16 c8 es d fis, \appoggiatura fis g4 d'8 es8. g16 f8
     g4. \appoggiatura c,8 h4 c8 d8. g,16 as8 a8. c16 b8
-    h8. d16 c8 es,8. f16 d8 c4. r4 r8\fermata \bar "||" %25 finis
+    h8. d16 c8 es,8. f16 d8 c4. r4 r8\fermata \bar "|." %25 finis
   }
 }
 

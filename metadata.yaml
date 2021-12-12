@@ -1,16 +1,17 @@
-composer: Scheibl, Johann Adam
-title: Concerto in C
-id: (SI-Pk Mus. Ms. 15)
+composer:
+  last: Scheibl
+  first: Johann Adam
+title: Concerto
 genre: concerto
-scoring: 2 clno (C), timp (C–G), 2 vl, org/cemb solo, b
+scoring: 2 clno (C), [timp (C–G)], 2 vl, cemb solo, b
+license: cc-by-sa-4.0
 sources:
-  1:
+  B1:
     siglum: SI-Pk
     shelfmark: Mus. Ms. 15
-    type: manuscript copy
     date: 1740–1760
     rism: 1001022937
-    url:
-github: scheibl-concerto-in-C
-imslp:
-notes:
+    license: public domain
+    principal: true
+parts:
+  ottoni: Clarino I, II in C\\Timpani in C–G

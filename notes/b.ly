@@ -77,7 +77,7 @@ FirstBasso = {
     d, d g g, r d' g g,
     e'4 r r8 g e g
     c, c' h8.(\trill a32 h) c8 c h8.(\trill a32 h)
-    c8 e,16 f g8 g, c4 r\fermata \bar "||"
+    c8 e,16 f g8 g, c4 r\fermata \bar "|."
   }
 }
 
@@ -110,7 +110,7 @@ SecondBasso = {
     \time 12/8 c4\f es8 d8. g16 as8 g4 f8 es4 d8
     f4 es8 c4 c8 h4. r4 r8
     es8. d16 c8 d8. g16 as8 g4 f8 es4 d8
-    f4 es8 g4 g,8 c4. r4 r8\fermata \bar "||" %25 finis
+    f4 es8 g4 g,8 c4. r4 r8\fermata \bar "|." %25 finis
   }
 }
 

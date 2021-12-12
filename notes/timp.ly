@@ -28,7 +28,7 @@ FirstTimpani = {
     r2 c4 r
     R1*7 %71
     c4 r8 g16 g c4 r8 g16 g
-    c4 g8 g16 g c4 r\fermata \bar "||" %73 finis
+    c4 g8 g16 g c4 r\fermata \bar "|." %73 finis
   }
 }
 

@@ -62,7 +62,7 @@ FirstCembaloR = {
     <e g c>8 q g16 e f d e c d h c a h g %65
     a f g e f d e c h d g h, c e g c,
     \appoggiatura c4 d2\trill <c e g c>4 r
-    s1*6 \bar "||" %73 finis
+    s1*6 \bar "|." %73 finis
   }
 }
 
@@ -142,7 +142,7 @@ FirstCembaloL = {
     d,-! d g g, r d' g g, %70
     e'4 r r8 g-! e-! g-!
     c, c' h8.(\trill a32 h) c8 c h8.(\trill a32 h)
-    c8 e,16 f g8 g, <c c,>4 r\fermata \bar "||" %73 finis
+    c8 e,16 f g8 g, <c c,>4 r\fermata \bar "|." %73 finis
   }
 }
 
@@ -200,7 +200,7 @@ SecondCembaloR = {
     c2. \appoggiatura c8 d2.\trill
     \time 21/8 d16[ h a\trill g] f'[ d c\trill h] as'[ f es\trill d] h'4.\trill r32 c[ g as] f[ g es f] d[ es c d] h[ g a h] c[ h d c] es[ d f es] g([-. fis-. f-. e-.]) es([-. d-. des-. c-.]) g4 d'\trill
     \time 12/8 \bar "|" c4. s s2.
-    s1.*3 \bar "||"
+    s1.*3 \bar "|."
   }
 }
 
@@ -233,7 +233,7 @@ SecondCembaloL = {
     c,4 es8 d8. g16 as8 g4 f8 es4 d8
     f4 es8 c4 c8 h4. r4 r8
     es8. d16 c8 d8. g16 as8 g4 f8 es4 d8
-    f4 es8 g4 g,8 c4. r4 r8\fermata \bar "||" %25 finis
+    f4 es8 g4 g,8 c4. r4 r8\fermata \bar "|." %25 finis
   }
 }
 

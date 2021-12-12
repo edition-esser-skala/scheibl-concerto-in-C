@@ -1,31 +1,26 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-
-\paper {
-  #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
-  systems-per-page = #2
-}
-
-#(set-global-staff-size 15.87)
+\include "score_settings/full-score.ly"
 
 \book {
   \bookpart {
-    \header {
-      number = "I"
+    \section "1" "Allegro"
+    \addTocEntry
+    \paper {
+      systems-per-page = #2
+      indent = 2.5\cm
     }
-    \paper { indent = 2.5\cm }
-    \tocSection "1" "Allegro"
     \score {
       <<
         \new StaffGroup <<
           \new Staff <<
-            \set Staff.instrumentName = \markup \center-column { "Clarino I, II" "in C" }
+            \set Staff.instrumentName = \transposedName "Clarino I, II" "C" ""
             \partCombine \FirstClarinoI \FirstClarinoII
           >>
         >>
         \new Staff {
-          \set Staff.instrumentName = \markup \center-column { "Timpani" "in C–G" }
+          \set Staff.instrumentName = \transposedTimp "C" "" "G" ""
           \FirstTimpani
         }
         \new StaffGroup <<
@@ -35,7 +30,7 @@
           }
         >>
         \new PianoStaff <<
-          \set PianoStaff.instrumentName = "Organo"
+          \set PianoStaff.instrumentName = "Cembalo"
           \new Staff = "RH" { \FirstCembaloR }
           \new Staff = "LH" { \FirstCembaloL }
         >>
@@ -51,15 +46,13 @@
     }
   }
   \bookpart {
-    \header {
-      number = "II"
-    }
+    \section "2" "Larghetto"
+    \addTocEntry
     \paper {
-      system-system-spacing.basic-distance = #20
-      system-system-spacing.minimum-distance = #20
+      system-system-spacing.basic-distance = #22
+      system-system-spacing.minimum-distance = #22
       systems-per-page = #3
     }
-    \tocSection "2" "Larghetto"
     \score {
       <<
         \new StaffGroup <<
@@ -69,7 +62,7 @@
           }
         >>
         \new PianoStaff <<
-          \set PianoStaff.instrumentName = "org"
+          \set PianoStaff.instrumentName = "cemb"
           \new Staff = "RH" { \SecondCembaloR }
           \new Staff = "LH" { \SecondCembaloL }
         >>
@@ -85,10 +78,9 @@
     }
   }
   \bookpart {
-    \header {
-      number = "III"
-    }
-    \tocSection "3" "Allegro"
+    \section "3" "Allegro"
+    \addTocEntry
+    \paper { systems-per-page = #2 }
     \score {
       <<
         \new StaffGroup <<
@@ -108,7 +100,7 @@
           }
         >>
         \new PianoStaff <<
-          \set PianoStaff.instrumentName = "org"
+          \set PianoStaff.instrumentName = "cemb"
           \new Staff = "RH" { \ThirdCembaloR }
           \new Staff = "LH" { \ThirdCembaloL }
         >>

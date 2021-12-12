@@ -28,7 +28,7 @@ FirstClarinoII = {
     r2 e4 r
     R1*7 %71
     e4 r8 d e4 r8 d
-    e4 d8.\trill c16 c4 r\fermata \bar "||" %73 finis
+    e4 d8.\trill c16 c4 r\fermata \bar "|." %73 finis
   }
 }
 
